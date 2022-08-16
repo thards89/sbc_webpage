@@ -32,17 +32,10 @@
 </header>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
+<div class="w3-content" id="mainContainer" style="max-width:1100px">
 
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large">
-     <img src="https://climaonline.com.br/public/fotos/sp/sao-bernardo-do-campo/foto-antiga-de-sao-bernardo-do-campo-75.webp" class="w3-round w3-image w3-opacity-min" alt="Old Pic" width="600" height="750">
-     <br>
-
-     <img src="https://www.saobernardo.sp.gov.br/documents/10181/34439/cidade_antiga.jpg/1c94e8d1-09e9-467e-ba13-4d68c1b30bca?t=1406136336015" class="w3-round w3-image w3-opacity-min" alt="Old Pic2" width="600" height="750">
-    </div>
-
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center titles">About the City</h1><br>
       <h5 class="w3-center">The first Brazilian settlement built away from the sea</h5>
@@ -51,27 +44,27 @@
         The population is 844,483 (2020 est.) in an area of 409.51 km2 (158.11 sq mi).</p>
       <p class="w3-large">The city was founded by João Ramalho in 1553 and was known as Vila de Santo André da Borda do Campo de Piratininga, soon transferred to another nearby place, safer from hostile tribes. It is, however, historically perceived as the first Brazilian settlement built away from the sea. </p>
       <p class="w3-large"> The original settlement was then resettled as São Bernardo, became a parish in 1812 and became a municipality in 1890. In 1938, it became a part of the Santo André district only to be separated again in 1945, as the aftermath of an action from a group of entrepreneurs led by Wallace Cochrane Simonsen, who was eventually appointed as the first mayor of the newborn municipality.</p>
-      <!--<p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>!-->
     </div>
+    <div class="w3-col m6 w3-padding-large">
+      <img src="https://climaonline.com.br/public/fotos/sp/sao-bernardo-do-campo/foto-antiga-de-sao-bernardo-do-campo-75.webp" class="w3-round w3-image w3-opacity-min" alt="Old Pic" width="600" height="750">
+       <img src="https://www.saobernardo.sp.gov.br/documents/10181/34439/cidade_antiga.jpg/1c94e8d1-09e9-467e-ba13-4d68c1b30bca?t=1406136336015" class="w3-round w3-image w3-opacity-min" alt="Old Pic2" width="600" height="750">
+     </div>
   </div>
    <hr>
-   <br>
-   <br>
 <!--- Places to Visit --->
 <div class="redirect"  id="places"></div>
+<div class="placesToVisitContainer">
 <div class="w3-container text-center">
      <h1 class="titles">Places to Visit</h1><br>
 </div>
-
-<br>
 <!-- Card 1 -->
 <!--- Places to Visit Details -->
 <div class="detailsContainer">
 <div class="container-fluid padding">
-  <div class="row padding">
+  <div class="row padding responsive">
 
     <div class="col-md-3">
-      <div class="card h-100">
+      <div class="card h-100" id="cardContainer">
           <img class="card-img-top img-fluid" id="myImg" src="http://imprensaabc.com.br/wp-content/uploads/2015/11/Estoril-2.jpg" alt="Estoril Park">
           <!-- The Modal -->
       <div id="myModal" class="modal">
@@ -86,13 +79,14 @@
         <div class="card-body" id="cardBody">
           <h4 class="card-title text-center">Estoril Park</h4>
           <p class="card-text text-center">With a cable car, a beautiful dam view, pedal boats, some hikings paths inside nature and a municipal zoo with more then 450 species of animals, it is a must-see park.</p>
-          </div>
+        <p></p>  
+        </div>
       </div>
     </div>	
 
       <!-- Card 2 -->
     <div class="col-md-3">
-      <div class="card h-100">
+      <div class="card h-100 cardSmall" id="cardContainer">
         <img class="card-img-top image-fluid" id="myImg2" src="https://catracalivre.com.br/wp-content/uploads/2020/01/caminhos-do-mar-2-1-1.jpg" alt="Eco-tourism Center Caminhos do Mar">
          <!-- The Modal -->
       <div id="myModal2" class="modal">
@@ -107,13 +101,14 @@
           <h4 class="card-title text-center">Eco-tourism Center Caminhos do Mar</h4>
           <p class="card-text text-center">Called by many as “Estrada Velha de Santos”, this road is considered the oldest connection between the cities of São Paulo with others on the São Paulo coast. The road was inaugurated in 1844 and it was used until 1985, when it was closed.
             In this eco-tourism center, you can make hikings through the old road and among the beautiful nature of Mata Atlantica.</p>
-        </div>
+            <p></p>
+          </div>
         </div>
         </div>
     
       <!-- Card 3 -->
       <div class="col-md-3">
-      <div class="card h-100">
+      <div class="card h-100 cardSmall" id="cardContainer">
         <img class="card-img-top  max-width: 100%" id="myImg3" src="https://www.baressp.com.br/bares/fotos/barcentral_tratada.jpg" alt="Kennedy Avenue">
                  <!-- The Modal -->
       <div id="myModal3" class="modal">
@@ -128,12 +123,13 @@
           <h4 class="card-title text-center">Kennedy Avenue</h4>
           <p class="card-text text-center">An avenue full of bars and restaurants to try the best of Sao Bernado do Campo food.
             There you can have the typical city`s dish called "Frango com Polenta" (Chicken with Polenta).</p>
-         </div>
+            <p></p>
+          </div>
       </div>
     </div>		
     <!-- Card 4 -->
     <div class="col-md-3">
-      <div class="card h-100">
+      <div class="card h-100 cardSmall" id="cardContainer">
         <img class="card-img-top  max-width: 100%" id="myImg4" src="https://i.ytimg.com/vi/cylLav4XXh0/maxresdefault.jpg" alt="Rua Marechal Deodoro">
                  <!-- The Modal -->
       <div id="myModal4" class="modal">
@@ -147,54 +143,49 @@
         <div class="card-body" id="cardBody4">
           <h4 class="card-title text-center">Marechal Deodoro</h4>
           <p class="card-text text-center">Would you like to go shopping? This is the most popular and traditional shopping street of the city.</p>
+          <p></p>
         </div>
       </div>
     </div>
     </div>	
   </div>
   </div>
-<br>
-<br>
+  </div>
 <hr>
-<br>
-
 
   <!-- Directions Section -->
   <div class="redirect" id="directions">
   </div>
+  <div class="directionsContainer">
+  <div class="col-md-3">
   <div class="w3-container text-center">
     <h1 class="titles">Directions</h1><br>
    </div>
 
-
    <div class="w3-container w3-padding text-center w3-large">
     <p>From Sao Paulo city, you just need to get Anchieta Railway in Ipiranga neighbourhood and get ou on Km 18.</p>
    </div>
-   <br>
-
+   
    <div class="w3-container w3-padding text-center" >
     <iframe class="smallScreen" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d141119.91847175584!2d-46.690948221108606!3d-23.633540149238616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2sS%C3%A3o%20Paulo%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!3m2!1d-23.555771399999998!2d-46.6395571!4m5!1s0x94ce3fc6927dd0c3%3A0xcdcd0d550f9656cf!2sS%C3%A3o%20Bernardo%20do%20Campo%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!3m2!1d-23.7018047!2d-46.5536333!5e0!3m2!1sen!2snl!4v1638253901587!5m2!1sen!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
    </div>
-   <br>
-
+  </div>
+  </div>
+</div>
+   
    <!-- End page content -->
 </div>
 
    <!-- Bottom Image --> 
   
   <div class="w3-image w3-opacity-min w3-sepia-min" style="100%" id="lastImg">
-    <img src="https://cdn.acritica.net/upload/dn_noticia/2020/04/1588088858.jpg" alt="SBC" width="100%">
+    <img id="footerPic" src="https://cdn.acritica.net/upload/dn_noticia/2020/04/1588088858.jpg" alt="SBC" width="100%">
   </div>
- 
-   <br>
-   <br>
-      
-
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Template Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p>Code developed by <a href="https://github.com/thards89" title="Git Hub" target="_blank" class="w3-hover-text-green">Thais Ribeiro Developer</a></p>
+  <p class="footerText">Template Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="footerText">Code developed by <a href="https://github.com/thards89" title="Git Hub" target="_blank" class="w3-hover-text-green">Thais Ribeiro Developer</a></p>
 </footer>
 <script src="script.js"></script>
 </body>

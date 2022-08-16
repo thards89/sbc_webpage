@@ -1,148 +1,218 @@
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
 #cityname {
-  color: white; 
+  color: white;
 }
 
 /* Style the Image Used to Trigger the Modal */
-#myImg, #myImg2, #myImg3, #myImg4 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  #myImg2:hover {opacity: 0.7;} 
-  #myImg3:hover {opacity: 0.7;}
-  #myImg4:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption, #caption2, #caption3, #caption4  {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption, #caption2, #caption3, #caption4 {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .card-img-top {
-    width: 100%;
-    height: 13vw;
-    object-fit: cover;
+#myImg,
+#myImg2,
+#myImg3,
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.redirect{
+#myImg:hover {
+  opacity: 0.7;
+}
+#myImg2:hover {
+  opacity: 0.7;
+}
+#myImg3:hover {
+  opacity: 0.7;
+}
+#myImg4:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption,
+#caption2,
+#caption3,
+#caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption,
+#caption2,
+#caption3,
+#caption4 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 13vw;
+  object-fit: cover;
+}
+
+.redirect {
   margin-bottom: 60px;
   padding-bottom: 10px;
 }
 
-.headerText{
+.headerText {
   text-align: center;
-  text-shadow:1px 1px 0 #444;
-  color: white
+  text-shadow: 1px 1px 0 #444;
+  color: white;
 }
 
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
   }
+}
 
-  /* Responsiveness  */
+/* Responsiveness  */
 @media only screen and (max-width: 950px) {
   #home {
-    max-width:90rem;
-    min-width:29rem
+    max-width: 90rem;
+    min-width: 29rem;
   }
 
-  .headerText{
+  .headerText {
     text-align: center;
     font-size: 0.75rem;
-    text-shadow:1px 1px 0 #444;
-    color: white
+    text-shadow: 1px 1px 0 #444;
+    color: white;
   }
- 
+
   .card-img-top {
     width: 100%;
-    height: 80vw;
+    height: 50vw;
     object-fit: cover;
-}
-  #cardBody, #cardBody3, #cardBody4{
-    height: 30rem;
   }
 
-  #cardBody2{
-    height: 25rem;
+  .detailsContainer {
+    width: 500px;
   }
 
-  .card-text{
-    font-size: 1.5rem;
+  .responsive {
+    display: block;
+    margin-left: 60px;
+  }
+
+  #cardContainer {
+    width: 700px;
+  }
+
+  #cardContainer2 {
+    width: 700px;
+  }
+
+  #cardContainer3 {
+    width: 700px;
+  }
+
+  #cardContainer4 {
+    width: 700px;
+  }
+
+  #cardBody {
+    height: 20rem;
+  }
+
+  #cardBody2 {
+    height: 33rem;
+  }
+
+  #cardBody3 {
+    height: 22rem;
+  }
+
+  #cardBody4 {
+    height: 15rem;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+  }
+  .card-text {
+    font-size: 2rem;
+  }
+  .smallScreen {
+    width: 500px;
+    height: 450px;
   }
 }
 
 @media only screen and (max-width: 850px) {
   #home {
-    max-width:90rem;
-    min-width:29rem
+    max-width: 90rem;
+    min-width: 29rem;
   }
 
   .redirect {
@@ -151,197 +221,473 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1px;
   }
 
-  .headerText{
+  .headerText {
     text-align: center;
-    font-size: 0.75rem;
-    text-shadow:1px 1px 0 #444;
-    color: white
+    font-size: 1rem;
+    text-shadow: 1px 1px 0 #444;
+    color: white;
   }
- 
+
   .card-img-top {
     width: 100%;
-    height: 80vw;
+    height: 50vw;
     object-fit: cover;
-}
-  #cardBody, #cardBody3, #cardBody4{
+  }
+
+  .detailsContainer {
+    width: 500px;
+  }
+
+  .responsive {
+    display: block;
+    margin-left: 60px;
+  }
+
+  #cardContainer {
+    width: 700px;
+  }
+
+  #cardContainer2 {
+    width: 700px;
+  }
+
+  #cardContainer3 {
+    width: 700px;
+  }
+
+  #cardContainer4 {
+    width: 700px;
+  }
+
+  #cardBody {
     height: 20rem;
   }
 
   #cardBody2 {
-    height: 25rem;
-  }
-  .card-text{
-    font-size: 1.7rem;
-    }
-    .smallScreen {
-      width: 350px;
-      height: 250px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-  #sbcTitle{
-    width: 13rem;
-  }
-  
-  #home {
-    max-width:90rem;
-    min-width:29rem
-  }
-
-  .redirect {
-    height: 1px;
-    margin: 1px;
-    padding: 1px;
-  }
-
-  .headerText{
-    text-align: center;
-    font-size: 0.75rem;
-    text-shadow:1px 1px 0 #444;
-    color: white
-  }
- 
-  .card-img-top {
-    width: 100%;
-    height: 80vw;
-    object-fit: cover;
-}
-  #cardBody, #cardBody3, #cardBody4{
-    height: 20rem;
-  }
-
-  #cardBody2 {
-    height: 40rem;
+    height: 33rem;
   }
 
   #cardBody3 {
-    height: 25rem;
-  }
-  .card-text{
-    font-size: 1.3rem;
-    }
-
-    .smallScreen {
-      width: 250px;
-      height: 180px;
-    }
-
-    .titles{
-      font-size: 2rem;
-    }
-}
-
-
-@media only screen and (max-width: 450px) {
-  #sbcTitle{
-    width: 13rem;
-  }
-  
-  #home {
-    max-width:90rem;
-    min-width:29rem
+    height: 22rem;
   }
 
-  .redirect {
-    height: 1px;
-    margin: 1px;
-    padding: 1px;
-  }
-
-  .headerText{
-    text-align: center;
-    font-size: 0.65rem;
-    text-shadow:1px 1px 0 #444;
-    color: white
-  }
- 
-  .card-img-top {
-    width: 100%;
-    height: 80vw;
-    object-fit: cover;
-}
-  #cardBody, #cardBody3, #cardBody4{
-    height: 20rem;
-  }
-
-  #cardBody2 {
-    height: 40rem;
-  }
-
-  #cardBody3 {
-    height: 25rem;
-  }
-  .card-text{
-    font-size: 1.3rem;
-    }
-
-    .smallScreen {
-      width: 250px;
-      height: 180px;
-    }
-
-    .titles{
-      font-size: 2rem;
-    }
-}
-
-
-@media only screen and (max-width: 300px) {
-  #sbcTitle{
-    width: 13rem;
-  }
-  
-  #home {
-    max-width:90rem;
-    min-width:29rem
-  }
-
-  .redirect {
-    height: 1px;
-    margin: 1px;
-    padding: 1px;
-  }
-
-  .headerText{
-    text-align: center;
-    font-size: 0.75rem;
-    text-shadow:1px 1px 0 #444;
-    color: white
-  }
- 
-  .card-img-top {
-    width: 100%;
-    height: 80vw;
-    object-fit: cover;
-}
-  #cardBody{
-    height: 20rem;
-  }
-
-  #cardBody2 {
-    height: 32rem;
-  }
-
-  #cardBody3 {
-    height: 20rem;
-  }
-
-  #cardBody4{
+  #cardBody4 {
     height: 15rem;
   }
 
-  .card-text{
-    font-size: 1.4rem;
-    }
-
-    .smallScreen {
-      width: 250px;
-      height: 180px;
-    }
-
-    .titles{
-      font-size: 1.75rem;
-    }
+  .card-title {
+    font-size: 2.5rem;
+  }
+  .card-text {
+    font-size: 2rem;
+  }
+  .smallScreen {
+    width: 500px;
+    height: 450px;
+  }
 }
 
+@media only screen and (max-width: 550px) {
+  #sbcTitle {
+    width: 13rem;
+  }
+
+  #home {
+    max-width: 90rem;
+    min-width: 29rem;
+  }
+
+  #mainContainer {
+    max-width: 50%;
+    min-width: 31%;
+  }
+
+  .redirect {
+    height: 1px;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .headerText {
+    text-align: center;
+    font-size: 0.8 5rem;
+    text-shadow: 1px 1px 0 #444;
+    color: white;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 80vw;
+    object-fit: cover;
+  }
+
+  .responsive {
+    margin-left: 20px;
+  }
+
+  #cardContainer {
+    width: 400px;
+  }
+
+  #cardContainer2 {
+    width: 400px;
+  }
+
+  #cardContainer3 {
+    width: 400px;
+  }
+
+  #cardContainer4 {
+    width: 400px;
+  }
+
+  #cardBody {
+    height: 13rem;
+  }
+
+  #cardBody2 {
+    height: 22rem;
+  }
+
+  #cardBody3 {
+    height: 13rem;
+  }
+  #cardBody4 {
+    height: 10rem;
+  }
+  .card-text {
+    font-size: 1.3rem;
+  }
+
+  .smallScreen {
+    width: 250px;
+    height: 180px;
+  }
+
+  .titles {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #sbcTitle {
+    width: 13rem;
+  }
+
+  #home {
+    max-width: 90rem;
+    min-width: 29rem;
+  }
+
+  .redirect {
+    height: 1px;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .headerText {
+    text-align: center;
+    font-size: 0.75rem;
+    text-shadow: 1px 1px 0 #444;
+    color: white;
+  }
+
+  /* cards */
+  .titles {
+    margin: 100px !important;
+  }
+  .padding {
+    padding: 1px;
+    margin: 1px;
+  }
+  .col-md-3 {
+    padding: 20px;
+  }
+  #cardContainer {
+    width: 460px;
+  }
+  #cardContainer2 {
+    width: 460px;
+  }
+  #cardContainer3 {
+    width: 460px;
+  }
+  #cardContainer4 {
+    width: 460px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+  }
+
+  #cardBody {
+    height: 16rem;
+  }
+
+  #cardBody2 {
+    height: 25rem;
+  }
+
+  #cardBody3 {
+    height: 16rem;
+  }
+
+  #cardBody4 {
+    height: 13rem;
+  }
+  .card-title {
+    font-size: 1.7rem;
+  }
+
+  .card-text {
+    font-size: 1.47rem;
+  }
+
+  /* directions */
+  .directionsContainer {
+    border: 1px solid rgb(221, 211, 211);
+    width: 460px;
+    height: 410px;
+    margin: 20px;
+    margin-bottom: 5px;
+  }
+
+  .smallScreen {
+    width: 240px;
+    height: 190px;
+  }
+
+  .titles {
+    font-size: 1.5rem;
+  }
+  #directions {
+    font-size: 1.3rem;
+  }
+  #footerPic {
+    width: 100%;
+  }
+  .footerText {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #sbcTitle {
+    width: 13rem;
+  }
+
+  #home {
+    max-width: 90rem;
+    min-width: 29rem;
+  }
+
+  .redirect {
+    height: 1px;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .headerText {
+    text-align: center;
+    font-size: 0.75rem;
+    text-shadow: 1px 1px 0 #444;
+    color: white;
+  }
+
+  /* cards */
+  .titles {
+    text-align: center;
+  }
+  .padding {
+    padding: 1px;
+    margin: 1px;
+  }
+  .col-md-3 {
+    padding: 10px;
+  }
+  #cardContainer {
+    width: 350px;
+  }
+  #cardContainer2 {
+    width: 350px;
+  }
+  #cardContainer3 {
+    width: 350px;
+  }
+  #cardContainer4 {
+    width: 350px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+  }
+
+  #cardBody {
+    height: 16rem;
+  }
+
+  #cardBody2 {
+    height: 25rem;
+  }
+
+  #cardBody3 {
+    height: 16rem;
+  }
+
+  #cardBody4 {
+    height: 12rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
+
+  /* directions */
+  .directionsContainer {
+    border: 1px solid rgb(221, 211, 211);
+    width: 350px;
+    height: 410px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+  .smallScreen {
+    width: 240px;
+    height: 190px;
+  }
+
+  .titles {
+    font-size: 1.5rem;
+  }
+  #directions {
+    font-size: 1.3rem;
+  }
+  #footerPic {
+    width: 100%;
+  }
+  .footerText {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 282px) {
+  #mainImg {
+    width: 100%;
+  }
+
+  #mainContainer {
+    max-width: 50%;
+    min-width: 31%;
+  }
+
+  #sbcTitle {
+    width: 13rem;
+  }
+
+  #home {
+    max-width: 90rem;
+    min-width: 29rem;
+  }
+
+  .redirect {
+    height: 1px;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .headerText {
+    text-align: center;
+    font-size: 0.75rem;
+    text-shadow: 1px 1px 0 #444;
+    color: white;
+  }
+  .w3-padding-64 {
+    padding-top: 10px !important;
+  }
+  /* cards */
+  .titles {
+    text-align: center;
+  }
+  .padding {
+    padding: 1px;
+    margin: 1px;
+  }
+  .col-md-3 {
+    padding: 5px;
+  }
+  #cardContainer {
+    width: 260px;
+  }
+  #cardContainer2 {
+    width: 260px;
+  }
+  #cardContainer3 {
+    width: 260px;
+  }
+  #cardContainer4 {
+    width: 260px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+  }
+
+  #cardBody {
+    height: 18rem;
+  }
+
+  #cardBody2 {
+    height: 35rem;
+  }
+
+  #cardBody3 {
+    height: 20rem;
+  }
+
+  #cardBody4 {
+    height: 15rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
+
+  /* directions */
+  .directionsContainer {
+    border: 1px solid rgb(221, 211, 211);
+    width: 260px;
+    height: 410px;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+
+  .smallScreen {
+    width: 220px;
+    height: 180px;
+  }
+
+  .titles {
+    font-size: 1.5rem;
+  }
+  #directions {
+    font-size: 1.2rem;
+  }
+  #footerPic {
+    width: 100%;
+  }
+  .footerText {
+    font-size: 0.75rem;
+  }
+}
